@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5CEC7"
+    android:padding="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_block"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#FFAAA5"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/icon_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Prabowo Jokowi"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:gravity="center_horizontal|center_vertical"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/ocr_button"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/round_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/profile_block"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OCR"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/profile_block"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/home_pic"
+        android:layout_below="@id/ocr_button"
+        android:foregroundGravity="bottom"/>
+
+</RelativeLayout>

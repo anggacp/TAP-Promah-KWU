@@ -1,5 +1,6 @@
 package com.project.ocr;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,15 +18,15 @@ public class HomeScreen extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.home_screen, container, false);
+        View view = inflater.inflate(R.layout.home_screen, container, false);
 
-        ImageButton clickOCR = (ImageButton) view.findViewById(R.id.ocr_button);
+        ImageButton clickOCR = view.findViewById(R.id.ocr_button);
+
         clickOCR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction frOCR = getFragmentManager().beginTransaction();
-                frOCR.replace(R.id.fragment_container,new OcrScreen());
-                frOCR.addToBackStack(null).commit();
+                Intent intent = new Intent(getActivity(),OcrScreen.class);
+                startActivity(intent);
             }
         });
 

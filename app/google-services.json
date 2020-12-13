@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "362717266248",
+    "project_id": "tugasocr",
+    "storage_bucket": "tugasocr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362717266248:android:bed63bc6acd7bb28b6337d",
+        "android_client_info": {
+          "package_name": "com.project.ocr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362717266248-jbl11vf552iklj7eqh62kus85j4cfqsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcQC9u1JLDoinfMHuw3nYNcxhSw9v1KvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362717266248-jbl11vf552iklj7eqh62kus85j4cfqsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

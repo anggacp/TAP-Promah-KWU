@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCEDC1"
     android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/image_preview"
@@ -19,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Hasil OCR :"
         android:textStyle="bold"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
@@ -28,7 +32,7 @@
         android:id="@+id/ocr_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_below="@id/ocr"
@@ -40,7 +44,7 @@
         android:layout_height="wrap_content"
         android:text="Hasil Translate :"
         android:textStyle="bold"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_below="@id/ocr_result"
@@ -49,7 +53,7 @@
         android:id="@+id/ocr_translate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_below="@id/translate"
@@ -58,51 +62,36 @@
 
     <Button
         android:id="@+id/retake_button"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_below="@id/ocr_translate"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
         android:background="#A8E6CF"
         android:text="Ambil Foto"
         android:textStyle="bold"
-        android:textSize="14sp"
-        android:onClick="doProcess"/>
+        android:textSize="20sp"
+        android:onClick="doProcess"
+        />
     <Button
         android:id="@+id/translate_button"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:layout_below="@id/retake_button"
         android:background="#A8E6CF"
         android:layout_marginTop="15dp"
-        android:layout_marginStart="20dp"
         android:text="Translate"
         android:textStyle="bold"
-        android:textSize="14sp"/>
+        android:textSize="20sp"/>
     <Button
         android:id="@+id/bunyikan_button"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
-        android:layout_toEndOf="@id/retake_button"
-        android:layout_below="@id/ocr_translate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/translate_button"
         android:background="#A8E6CF"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
         android:text="Bunyikan"
         android:textStyle="bold"
-        android:textSize="14sp"/>
-    <Button
-        android:id="@+id/back_button"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
-        android:layout_below="@id/bunyikan_button"
-        android:layout_toEndOf="@id/translate_button"
-        android:background="@drawable/round_button"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="30dp"
-        android:text="Kembali"
-        android:textStyle="bold"
-        android:textSize="14sp"/>
+        android:textSize="20sp"/>
 
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

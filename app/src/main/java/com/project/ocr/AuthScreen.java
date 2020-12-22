@@ -1,10 +1,12 @@
 package com.project.ocr;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -14,13 +16,17 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class AuthScreen extends Fragment {
 
+    private EditText nameTxt;
+    private Button clickOke;
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.auth_screen, container, false);
 
 
-        Button clickOke = (Button) view.findViewById(R.id.button_oke);
+        clickOke = view.findViewById(R.id.button_oke);
         clickOke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

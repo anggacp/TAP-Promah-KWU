@@ -5,15 +5,17 @@
     android:layout_height="fill_parent"
     android:background="#FFD3B6"
     android:padding="10dp"
-    >
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true">
 
     <TextView
         android:id="@+id/halo_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:paddingLeft="30dp"
-        android:text="Halo,"
+        android:gravity="center"
+        android:text="Selamat Datang"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="48sp"
@@ -23,11 +25,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/halo_text"
-        android:paddingLeft="30dp"
-        android:text="Siapa namamu?"
+        android:gravity="center"
+        android:text="Apa kamu siap untuk belajar?"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textSize="25sp"
         />
     <ImageView
         android:id="@+id/auth_image"
@@ -37,24 +39,14 @@
         android:layout_below="@+id/siapa_text"
         android:src="@drawable/auth_pic"
         />
-    <EditText
-        android:id="@+id/input_text"
-        android:layout_width="305dp"
-        android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/auth_image"
-        android:layout_marginTop="15dp"
-        android:text="Input name here ..."
-        android:background="@color/cardview_light_background"
-        />
     <Button
         android:id="@+id/button_oke"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/input_text"
-        android:layout_marginTop="15dp"
-        android:text="Oke"
+        android:layout_below="@+id/auth_image"
+        android:layout_marginTop="30dp"
+        android:text="Ya, Aku Siap!"
         android:textSize="20sp"
         />
 

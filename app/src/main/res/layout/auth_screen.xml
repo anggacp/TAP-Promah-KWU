@@ -50,5 +50,15 @@
         android:textSize="20sp"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semangat ya revin"
+        android:layout_below="@id/button_oke"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="@color/white"/>
+
 
 </RelativeLayout>
